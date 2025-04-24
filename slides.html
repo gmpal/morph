@@ -49,9 +49,7 @@
 
     .reveal p {
       font-size: 0.5em;
-
     }
-
     
     .reveal strong {
       color: #64ffda;
@@ -321,6 +319,78 @@
       color: #64ffda;
       margin-bottom: 10px;
     }
+
+    .readiness-container {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .readiness-label {
+      font-size: 0.6em;
+      text-align: right;
+    }
+
+    .readiness-bar {
+      height: 20px;
+      background-color: rgba(26, 38, 63, 0.8);
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .readiness-fill {
+      height: 100%;
+      border-radius: 10px;
+      background-color: #64ffda;
+    }
+
+    .readiness-text {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      font-size: 0.6em;
+      line-height: 20px;
+      color: #fff;
+    }
+
+    .tier-box {
+      background-color: rgba(26, 38, 63, 0.8);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid;
+    }
+
+    .tier-basic {
+      border-color: #3498db;
+    }
+
+    .tier-premium {
+      border-color: #e74c3c;
+    }
+
+    .tier-enterprise {
+      border-color: #9b59b6;
+    }
+
+    .usp-box {
+      background-color: rgba(26, 38, 63, 0.8);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #f39c12;
+    }
+
+    .patent-note {
+      background-color: rgba(230, 126, 34, 0.2);
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px;
+      display: inline-block;
+    }
   </style>
 </head>
 <body>
@@ -363,6 +433,29 @@
         </div>
       </section>
 
+      <!-- ATTACKS SLIDE -->
+      <section data-background="#0a192f">
+        <h2>The Adversarial Challenge</h2>
+        <div class="grid-container">
+          <div>
+            <p>Modern systems can detect many phishing attacks, but attackers continue to evolve.</p>
+            <div class="feature-box">
+              <h3>Successful Attacks:</h3>
+              <ul>
+                <li>Bypass detection systems</li>
+                <li>Look natural to humans</li>
+                <li>Preserve the original intent</li>
+                <li>Are easy to execute at scale</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img src="/api/placeholder/400/250" alt="Attack flow diagram" />
+            <p class="lowlight">Word swapping and other NLP techniques are increasingly used to evade detection</p>
+          </div>
+        </div>
+      </section>
+
       <!-- OUR SOLUTION -->
       <section data-background="#0a192f">
         <h2>Our Solution: MORPH</h2>
@@ -384,6 +477,55 @@
             <h3><i class="fas fa-brain feature-icon"></i> Intent Classification</h3>
             <p>Identifies attack purpose beyond simple binary detection</p>
           </div>
+        </div>
+      </section>
+
+      <!-- CORE TECHNOLOGY READINESS -->
+      <section data-background="#0a192f">
+        <h2>Core Technology Readiness</h2>
+        
+        <div class="readiness-container">
+          <div class="readiness-label">Adversarial Detection:</div>
+          <div class="readiness-bar">
+            <div class="readiness-fill" style="width: 90%"></div>
+            <div class="readiness-text">90% Complete</div>
+          </div>
+        </div>
+        
+        <div class="readiness-container">
+          <div class="readiness-label">NLP Text Analysis:</div>
+          <div class="readiness-bar">
+            <div class="readiness-fill" style="width: 85%"></div>
+            <div class="readiness-text">85% Complete</div>
+          </div>
+        </div>
+        
+        <div class="readiness-container">
+          <div class="readiness-label">Intent Preservation:</div>
+          <div class="readiness-bar">
+            <div class="readiness-fill" style="width: 80%"></div>
+            <div class="readiness-text">80% Complete</div>
+          </div>
+        </div>
+        
+        <div class="readiness-container">
+          <div class="readiness-label">Federated Learning:</div>
+          <div class="readiness-bar">
+            <div class="readiness-fill" style="width: 60%"></div>
+            <div class="readiness-text">60% Complete</div>
+          </div>
+        </div>
+        
+        <div class="readiness-container">
+          <div class="readiness-label">System Integration:</div>
+          <div class="readiness-bar">
+            <div class="readiness-fill" style="width: 40%"></div>
+            <div class="readiness-text">40% Complete</div>
+          </div>
+        </div>
+        
+        <div class="patent-note">
+          <i class="fas fa-copyright"></i> Patent-pending technology for adversarial phishing detection with federated privacy preservation
         </div>
       </section>
 
@@ -416,6 +558,70 @@
             <p>Provides actionable intelligence on attack goals and methods</p>
           </div>
         </div>
+      </section>
+
+      <!-- UNIQUE SELLING POINTS -->
+      <section data-background="#0a192f">
+        <h2>Why MORPH is Difficult to Copy</h2>
+        
+        <div class="grid-container">
+          <div>
+            <div class="usp-box">
+              <h3><i class="fas fa-fingerprint feature-icon"></i> Proprietary Algorithms</h3>
+              <p>Our unique approach to adversarial robustness is built on years of research expertise</p>
+            </div>
+            
+            <div class="usp-box">
+              <h3><i class="fas fa-brain feature-icon"></i> ML Architecture Know-How</h3>
+              <p>Custom neural network design optimized specifically for phishing detection</p>
+            </div>
+          </div>
+          
+          <div>
+            <div class="usp-box">
+              <h3><i class="fas fa-lock feature-icon"></i> Privacy-Preserving Framework</h3>
+              <p>Federated learning implementation that maintains GDPR compliance</p>
+            </div>
+            
+            <div class="usp-box">
+              <h3><i class="fas fa-shield-alt feature-icon"></i> Continuous Adaptation</h3>
+              <p>Self-improving system that learns from new attack vectors in real-time</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="patent-note">
+          <i class="fas fa-gavel"></i> Patent application in process for our core technology
+        </div>
+      </section>
+
+      <!-- EXPANSION POTENTIAL -->
+      <section data-background="#0a192f">
+        <h2>Beyond Email Security</h2>
+        
+        <div class="grid-container">
+          <div class="feature-box">
+            <h3><i class="fas fa-file-alt feature-icon"></i> Document Security</h3>
+            <p>Same technology can protect against malicious document attacks</p>
+          </div>
+          
+          <div class="feature-box">
+            <h3><i class="fas fa-comment feature-icon"></i> Chat Protection</h3>
+            <p>Extend to messaging platforms and collaboration tools</p>
+          </div>
+          
+          <div class="feature-box">
+            <h3><i class="fas fa-globe feature-icon"></i> Web Content Analysis</h3>
+            <p>Identify malicious content on websites and portals</p>
+          </div>
+          
+          <div class="feature-box">
+            <h3><i class="fas fa-mobile-alt feature-icon"></i> Mobile Application Security</h3>
+            <p>Protect against social engineering in mobile environments</p>
+          </div>
+        </div>
+        
+        <p class="lowlight">Each expansion represents additional revenue opportunities and can be priced as premium features</p>
       </section>
 
       <!-- MARKET OPPORTUNITY -->
@@ -476,7 +682,7 @@
               <li>Military branches</li>
               <li>Defense contractors</li>
               <li>National agencies</li>
-              <li>Critical infrastruct</li>
+              <li>Critical infrastructure</li>
             </ul>
             <p class="lowlight">Need air-gapped security solutions</p>
           </div>
@@ -520,37 +726,76 @@
         </table>
       </section>
 
-      <!-- BUSINESS MODEL -->
+      <!-- FLEXIBLE BUSINESS MODEL -->
       <section data-background="#0a192f">
-        <h2>Business Model</h2>
+        <h2>Flexible Business Model</h2>
         
-        <div class="grid-container">
+        <h3><i class="fas fa-layer-group feature-icon"></i> Tiered Product Strategy</h3>
+        
+        <div class="tier-box tier-basic">
+          <h3>Basic - SMB & Education</h3>
+          <p>Freemium model with core phishing protection</p>
+          <p>$5/user/month for advanced features</p>
+        </div>
+        
+        <div class="tier-box tier-premium">
+          <h3>Premium - Enterprise</h3>
+          <p>$10-15/user/month for full protection</p>
+          <p>Annual licenses starting at $50,000</p>
+        </div>
+        
+        <div class="tier-box tier-enterprise">
+          <h3>Custom - Defense & Government</h3>
+          <p>Custom pricing based on classification needs</p>
+          <p>On-premise and air-gapped deployments</p>
+        </div>
+        
+        <div class="grid-container" style="margin-top: 15px;">
           <div>
-            <div class="feature-box">
-              <h3><i class="fas fa-laptop-code feature-icon"></i> Software Licensing (60%)</h3>
-              <p>Enterprise: <strong>$50,000-$200,000</strong> annual licenses</p>
-              <p>Defense: Custom pricing based on classification level</p>
-            </div>
-            
-            <div class="feature-box">
-              <h3><i class="fas fa-headset feature-icon"></i> SaaS (25%)</h3>
-              <p><strong>$10-15</strong> per user monthly</p>
-              <p>Includes incident response</p>
-            </div>
+            <h4><i class="fas fa-plug feature-icon"></i> White Label Option</h4>
+            <p>Offer core technology to security vendors as integrated features</p>
           </div>
           
           <div>
-            <div class="feature-box">
-              <h3><i class="fas fa-hands-helping feature-icon"></i> Professional Services (15%)</h3>
-              <p>Implementation: <strong>$15,000-$50,000</strong></p>
-              <p>Training: <strong>$5,000</strong> per session or <strong>$150-$250</strong> hourly</p>
-            </div>
-            
-            <div class="feature-box">
-              <h3><i class="fas fa-chart-line feature-icon"></i> Margins</h3>
-              <p><strong>75%</strong> gross margin at scale</p>
-              <p><strong>30%</strong> EBITDA by Year 5</p>
-            </div>
+            <h4><i class="fas fa-handshake feature-icon"></i> Implementation Partners</h4>
+            <p>Reseller network and implementation partnerships</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ROADMAP -->
+      <section data-background="#0a192f">
+        <h2>Roadmap & Milestones</h2>
+        
+        <div class="timeline">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Now</h4>
+            <p>MVP complete, core adversarial technology functional (90%)</p>
+          </div>
+          
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>6 Months</h4>
+            <p>First 5 paying customers, patent filing, freemium version</p>
+          </div>
+          
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>12 Months</h4>
+            <p>15 customers, defense sector pilot, revenue $1.2M</p>
+          </div>
+          
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>24 Months</h4>
+            <p>FedRAMP certification, expansion beyond email, 45 customers</p>
+          </div>
+          
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>36 Months</h4>
+            <p>International expansion, breakeven, 110+ customers</p>
           </div>
         </div>
       </section>
@@ -560,11 +805,6 @@
         <h2>Financial Projections per Year</h2>
         
         <div style="margin-top: 30px;">
-          <div class="progress-bar-container">
-            <div class="progress-bar pb-year1"></div>
-          </div>
-          <p><strong>$1.2M</strong> revenue | <strong>15</strong> customers</p>
-          
           <div class="progress-bar-container">
             <div class="progress-bar pb-year2"></div>
           </div>
@@ -587,77 +827,56 @@
         </div>
       </section>
 
-      <!-- TEAM -->
+      <!-- DEVELOPMENT SPEED & TEAM -->
       <section data-background="#0a192f">
-        <h2>Our Team</h2>
+        <h2>Speed of Development</h2>
         
-        <div class="team-grid">
-          <div class="team-member">
-            <h3>Daniele</h3>
-            <p><strong>CEO & Chief Security Architect</strong></p>
-            <p>Former cybersecurity researcher at top-tier university, adversarial ML expert</p>
+        <div class="grid-container">
+          <div>
+            <div class="feature-box">
+              <h3><i class="fas fa-bolt feature-icon"></i> Rapid Iteration</h3>
+              <p>Core adversarial technology developed in just 48 hours</p>
+              <p>Modular architecture allows for rapid feature expansion</p>
+            </div>
+            
+            <div class="feature-box">
+              <h3><i class="fas fa-laptop-code feature-icon"></i> Technical Excellence</h3>
+              <p>Team combines PhDs in machine learning and cybersecurity</p>
+              <p>Deep expertise in NLP and adversarial techniques</p>
+            </div>
           </div>
           
-          <div class="team-member">
-            <h3>Jeremie</h3>
-            <p><strong>CTO & NLP Lead</strong></p>
-            <p>PhD in ML, expert in text analysis and language models</p>
-          </div>
-          
-          <div class="team-member">
-            <h3>Khaled</h3>
-            <p><strong>Chief Data Scientist</strong></p>
-            <p>Specialist in federated learning and privacy-preserving ML</p>
-          </div>
-          
-          <div class="team-member">
-            <h3>Gian Marco</h3>
-            <p><strong>COO & Business Development</strong></p>
-            <p>Background in enterprise security and defense sector partnerships</p>
+          <div class="team-grid">
+            <div class="team-member">
+              <h3>Daniele</h3>
+              <p><strong>CEO & Chief Security Architect</strong></p>
+              <p>Former cybersecurity researcher at top-tier university, adversarial ML expert</p>
+            </div>
+            
+            <div class="team-member">
+              <h3>Jeremie</h3>
+              <p><strong>CTO & NLP Lead</strong></p>
+              <p>PhD in ML, expert in text analysis and language models</p>
+            </div>
+            
+            <div class="team-member">
+              <h3>Khaled</h3>
+              <p><strong>Chief Data Scientist</strong></p>
+              <p>Specialist in federated learning and privacy-preserving ML</p>
+            </div>
+            
+            <div class="team-member">
+              <h3>Gian Marco</h3>
+              <p><strong>COO & Business Development</strong></p>
+              <p>Background in enterprise security and defense sector partnerships</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ROADMAP -->
-      <section data-background="#0a192f">
-        <h2>Roadmap & Milestones</h2>
-        
-        <div class="timeline">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h4>Now</h4>
-            <p>MVP complete, proven 95% detection rate in pilot tests</p>
-          </div>
-          
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h4>6 Months</h4>
-            <p>First 5 paying customers, SOC 2 compliance</p>
-          </div>
-          
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h4>12 Months</h4>
-            <p>15 customers, defense sector pilot, revenue $1.2M</p>
-          </div>
-          
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h4>24 Months</h4>
-            <p>FedRAMP certification, 45 customers, $4.5M revenue</p>
-          </div>
-          
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h4>36 Months</h4>
-            <p>International expansion, breakeven, 110+ customers</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ASK 
+      <!-- INVESTMENT OPPORTUNITY -->
       <section data-background="linear-gradient(160deg, #0a192f 0%, #172a45 100%)">
-        <h2>Our Ask</h2>
+        <h2>Investment Opportunity</h2>
         
         <div class="ask-box">
           <div class="ask-amount">$8M Series A</div>
@@ -667,26 +886,24 @@
         <div class="grid-container">
           <div class="feature-box">
             <h3><i class="fas fa-code-branch feature-icon"></i> Technology - $4M</h3>
-            <p>Expand engineering team and complete government certifications</p>
+            <p>Complete system integration and patent portfolio</p>
+            <p>Government certifications (SOC 2, FedRAMP)</p>
           </div>
           
           <div class="feature-box">
-            <h3><i class="fas fa-bullhorn feature-icon"></i> Sales - $2M</h3>
-            <p>Build sales pipeline across enterprise and defense sectors</p>
+            <h3><i class="fas fa-bullhorn feature-icon"></i> GTM - $3M</h3>
+            <p>Sales team across enterprise and defense</p>
+            <p>Partner network development</p>
           </div>
           
           <div class="feature-box">
             <h3><i class="fas fa-cogs feature-icon"></i> Operations - $1M</h3>
-            <p>Establish security operations center for managed services</p>
-          </div>
-          
-          <div class="feature-box">
-            <h3><i class="fas fa-globe-americas feature-icon"></i> Expansion - $1M</h3>
-            <p>International expansion and channel partner development</p>
+            <p>Security operations center</p>
+            <p>Managed service infrastructure</p>
           </div>
         </div>
       </section>
--->
+
       <!-- THANK YOU -->
       <section data-background="linear-gradient(160deg, #0a192f 0%, #172a45 100%)" data-transition="zoom">
         <h1>Thank You</h1>
@@ -719,7 +936,7 @@
     // Animation for bar chart
     Reveal.addEventListener('slidechanged', function(event) {
       // Check if we're on the market opportunity slide (index 4)
-      if (event.indexh === 4) {
+      if (event.indexh === 9) {
         setTimeout(function() {
           document.querySelector('.bar1').style.height = '40%';
           document.querySelector('.bar2').style.height = '20%';
@@ -737,3 +954,8 @@
   </script>
 </body>
 </html>
+            <div class="progress-bar pb-year1"></div>
+          </div>
+          <p><strong>$1.2M</strong> revenue | <strong>15</strong> customers</p>
+          
+          <div class="progress-bar-container">
